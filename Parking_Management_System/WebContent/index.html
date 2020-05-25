@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Parking Management System</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="login_css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="login_css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="DashBoard/dist/sweetalert/sweetalert2.css">
+  
+  <!-- Angular file -->
+  <script type="text/javascript" src="angular.js"></script>
+  <script type="text/javascript" src="Script.js"></script>
+  <script type="text/javascript" src="DashBoard/dist/sweetalert/sweetalert2.all.min.js"></script>	
+  
+</head>
+
+<body class="bg-gradient-primary">
+  
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-xl-6 col-lg-6 col-md-9">
+      <div class="card o-hidden border-0 shadow-lg my-4">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="p-2">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900">𝓟𝓪𝓻𝓴𝓲𝓷𝓰 𝓜𝓪𝓷𝓪𝓰𝓮𝓶𝓮𝓷𝓽 𝓢𝔂𝓼𝓽𝓮𝓶</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+<div class="container" ng-app="myapp" ng-controller="mycontroller">
+	<div class="row justify-content-center">
+	 <div class="col-xl-6 col-lg-6 col-md-9">
+		<div class="card o-hidden border-0 shadow-lg my-2">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">𝐖𝐞𝐥𝐜𝐨𝐦𝐞, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐋𝐨𝐠𝐢𝐧!</h1>
+                  </div>
+                  <form class="user">
+                    <div class="form-group">
+                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." ng-model="emp_email">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" ng-model="emp_password">
+                    </div>
+                    <div class="form-group">
+                     
+                    </div>
+                    <a href="" class="btn btn-primary btn-user btn-block" ng-click="emp_login()">
+                      Login
+                    </a>
+                  </form>
+                  <hr>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Forgot Password?</button>
+                  </div>
+                  
+                  <!-- Model Start ************************************************************************* -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <form>
+					          <div class="form-group">
+					            <label for="recipient-name" class="col-form-label">Enter Email</label>
+					            <input type="email" class="form-control" id="recipient-name" ng-model="forgot_email">
+					          </div>
+					          <div class="form-group" style="text-align: center;">
+					            <input type="button" class="btn btn-dark" value="Submit" ng-click="forgot_password()">
+					          </div>
+					        </form>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				 <!-- Model end ************************************************************************* -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	 </div>
+	</div>
+</div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="login_js/jquery.min.js"></script>
+  <script src="login_js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="login_js/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="login_js/sb-admin-2.min.js"></script>
+</body>
+</html>
